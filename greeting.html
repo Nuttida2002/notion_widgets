@@ -51,7 +51,7 @@ h1 {
 
 .clock {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Miriam Mono CLM', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     /* padding-left: 20px; */
@@ -72,14 +72,14 @@ h1 {
     min-width: 162px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Miriam Mono CLM', sans-serif;
     font-size: 1.2em;
 }
 .greet{
     
     min-width: 162px;
     /* padding-right: 30px; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Miriam Mono CLM', sans-serif;
     font-size: 1.2em;
 }
 
@@ -139,10 +139,10 @@ document.getElementById('sec').innerHTML = seconds;
 }
 
 function twelveHour(hour) {
-if (hour > 12) {
-    return hour -= 12 
+if (hour > 24) {
+    return hour -= 24 
 } else if (hour === 0) {
-    return hour = 12;
+    return hour = 24;
 } else {
     return hour
 }
